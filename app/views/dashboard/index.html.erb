@@ -1,0 +1,81 @@
+<% content_for :header do %>
+  <section class="content-header">
+    <div class="row">
+      <div class="col-xs-12">
+        <ol class="breadcrumb" style="font-size:medium;">
+          <li><a href="/dashboard"><i class="fa fa-dashboard"></i> 首页 </a></li>
+          <li class="active">主页</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+<% end %>
+
+<% content_for :content do %>
+  <section class="content"  style="margin-top:-25px;">
+
+    <div class="row">
+      
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <h3>草签</h3>
+        <div class="info-box">
+          <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
+
+          <div class="info-box-content">
+            <!-- <div id="chartContainer" style=" width: 100%;"></div> -->
+            <span class="info-box-text">草签种植数量</span>
+            <span style="font-size:14px" class="info-box-number i_transplantNumber"></span>
+            <span class="info-box-text">草签收购数量</span>
+            <span style="font-size:14px" class="info-box-number i_purchase"></span>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <span class="info-box-icon bg-green"><i style="height:100%" class="fa fa-flag-o"></i></span>
+
+          <div class="info-box-content">
+            <span class="info-box-text">草签种植面积</span>
+            <span style="font-size:14px" class="info-box-number i_area"></span>
+            <span class="info-box-text">草签合同数</span>
+            <span style="font-size:14px" class="info-box-number i_contracts"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <h3>正签</h3>
+        <div class="info-box">
+          <span class="info-box-icon bg-yellow"><i class="fa fa-files-o"></i></span>
+
+          <div class="info-box-content">
+            <span class="info-box-text">正签种植数量</span>
+            <span style="font-size:14px" class="info-box-number f_transplantNumber"></span>
+            <span class="info-box-text">正签收购数量</span>
+            <span style="font-size:14px" class="info-box-number f_purchase"></span>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <span class="info-box-icon bg-red"><i class="fa fa-star-o"></i></span>
+          <div class="info-box-content">
+            <span class="info-box-text">正签种植面积</span>
+            <span style="font-size:14px" class="info-box-number f_area"></span>
+            <span class="info-box-text">正签合同数</span>
+            <span style="font-size:14px" class="info-box-number f_contracts"></span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div id="transplant_purchase" style="height:250px;width:100%"></div>
+      </div>
+      <div class="col-md-6">
+        <div id="success_wait" style="height:250px;width:100%"></div>
+      </div>
+    </div>
+  </section>
+
+<% end %>

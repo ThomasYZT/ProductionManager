@@ -1,0 +1,2 @@
+module FContractsHelper
+end

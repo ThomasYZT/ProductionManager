@@ -1,0 +1,2 @@
+module PartyBsHelper
+end
